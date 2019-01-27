@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class LatticePathsTest {
+public class LatticePathsExhaustiveSearchTest {
 
-	private LatticePaths lp = new LatticePaths();
+	private LatticePathsExhaustiveSearch lp = new LatticePathsExhaustiveSearch();
 
 	@Test
 	public void testGenerateEdgesFor2By2Grid() {
@@ -83,9 +83,19 @@ public class LatticePathsTest {
 	}
 	
 	@Test
+	public void testCalculateRoutesFor5By5() {
+		assertEquals(252, lp.calculateRoutes(5));
+	}
+	
+	@Test
+	public void testCalculateRoutesFor6By6() {
+		assertEquals(924, lp.calculateRoutes(6));
+	}
+	
+	@Test
 	public void testCalculateRoutesFor20By20() {
 		//This will fail, because I don't want to give away the
 		// answer to the question.
-		assertEquals(20, lp.calculateRoutes(20));
+		//assertEquals(20, lp.calculateRoutes(20));
 	}
 }

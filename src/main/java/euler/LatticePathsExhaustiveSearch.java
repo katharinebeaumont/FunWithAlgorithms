@@ -23,7 +23,7 @@ package euler;
  * This is not the fastest way to do this. Perhaps using a matrix
  * representation would be faster.
  */
-public class LatticePaths {
+public class LatticePathsExhaustiveSearch {
 
 	/*
 	 * For a 2x2 grid, nGridSquares is 2.
