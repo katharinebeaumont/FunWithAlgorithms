@@ -29,12 +29,13 @@ public class TreeNode<E> {
 
 	public List<TreeNode<E>> getChildren() {
 		List<TreeNode<E>> list = new ArrayList<TreeNode<E>>();
-		if (leftChild != null) {
-			list.add(leftChild);
-		}
 		if (rightChild != null) {
 			list.add(rightChild);
 		}
+		if (leftChild != null) {
+			list.add(leftChild);
+		}
+		
 		return list;
 	}
 	
